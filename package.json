@@ -1,7 +1,7 @@
 {
-  "name": "study",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A boilerplate project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
