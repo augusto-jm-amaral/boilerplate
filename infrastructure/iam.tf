@@ -28,13 +28,23 @@ data "aws_iam_policy_document" "deployer" {
     ]
   }
 
+  statement {
+    actions = [
+      "ecr:GetAuthorizationToken"
+    ]
+
+    resources = [
+      "*"
+    ]
+  }
+
   depends_on = [
     aws_ecr_repository.repository
   ]
 }
 
 resource "aws_iam_user_policy" "deployer" {
-  name = "deployer-policy"
-  user = aws_iam_user.deployer.name
+  name   = "deployer-policy"
+  user   = aws_iam_user.deployer.name
   policy = data.aws_iam_policy_document.deployer.json
 }
