@@ -1,5 +1,5 @@
 {
   "yaml.schemas": {
-    "https://json.schemastore.org/github-action.json": "file:///Users/augusto/Documents/workspace/study/.github/workflow/deploy.yml"
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/augusto/Documents/workspace/study/.github/workflows/deploy.yml"
   }
 }

@@ -1,5 +1,4 @@
 name: Deploy to ECR
-description: "Deploy a new image on production"
 
 on:
   push:
